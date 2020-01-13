@@ -1,6 +1,6 @@
 # ft_libft
 
-My version of the ft_libft project at 42 school to implement a set of useful functions and add them to your personal C library for further uses in upcomming projects.
+My version of the ft_libft project at 42 school to implement a set of useful functions in c language and add them to your library for further use in upcomming projects.
 
 The new version of the ft_libft project with all parts (Mandatory + bonus).
 
