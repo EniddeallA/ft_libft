@@ -8,5 +8,5 @@ Feel free to use it to undestand the project, never use it for cheating!
 
 Final mark :
 
-![alt text](https://github.com/EniddeallA/ft_libft/blob/master/Screen%20Shot%202020-01-06%20at%207.40.48%20AM.png)
+![alt text](https://github.com/EniddeallA/ft_libft/blob/master/success.png)
 
