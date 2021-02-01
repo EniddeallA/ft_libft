@@ -65,8 +65,12 @@ OBJS = -Wall -Wextra -Werror -c
 
 all: $(NAME)
 
-$(NAME): $(SRCS)
-	$(CC) $(OBJS) $(SRCS)
+SDIR = ./mandatory/
+
+SRC =	$(addprefix $(SDIR), $(SRCS))
+
+$(NAME): $(SRC)
+	$(CC) $(OBJS) $(SRC)
 	ar rc $(NAME) *.o
 	ranlib $(NAME)
 
@@ -78,7 +82,13 @@ fclean: clean
 
 re: fclean all
 
-bonus: $(BONUS_SRCS)
-	$(CC) $(OBJS) $(BONUS_SRCS)
+BDIR = ./bonus/
+
+BSRC = $(addprefix $(BDIR), $(BONUS_SRCS))
+
+bonus: $(BSRC)
+	$(CC) $(OBJS) $(BSRC)
 	ar rc $(NAME) *.o
 	ranlib $(NAME)
+
+.PHONY: all bonus clean
